@@ -1,6 +1,6 @@
 cask "codeisland" do
-  version "1.9.0-rc1"
-  sha256 "c399ab8b545250af915e107d299ddb007e2cd6967527e85a0cfdb496ed76b45f"
+  version "1.10.0-rc1"
+  sha256 "94d7d2bb9aa0bb054b319a5219b6b50d72340d47cd1f6f9c2fa6800f8c1ffbf5"
 
   url "https://github.com/xmqywx/CodeIsland/releases/download/v#{version}/CodeIsland-v#{version}.zip",
       verified: "github.com/xmqywx/CodeIsland/"
