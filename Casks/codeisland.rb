@@ -1,6 +1,6 @@
 cask "codeisland" do
-  version "2.0.5"
-  sha256 "899b6566c3188d33e7905c9617753ab30024b0c23d5d25b85a8b5af088bc7578"
+  version "2.0.6"
+  sha256 "bfb7c3c18ece04db5784b9fa0d500d8cbf76c9eea4e7f30bdb851724c0947f5d"
 
   url "https://github.com/MioMioOS/MioIsland/releases/download/v#{version}/CodeIsland-v#{version}.zip",
       verified: "github.com/MioMioOS/MioIsland/"
