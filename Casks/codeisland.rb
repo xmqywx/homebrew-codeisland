@@ -1,8 +1,8 @@
 cask "codeisland" do
-  version "2.0.8"
-  sha256 "410f844c2e49bb27ed53d6049af42e6d6527c3611aec9f6a62e486257dcd604e"
+  version "2.0.9"
+  sha256 "ba8ab987ed4909313a3edd618ae4de7f4c319ae13feffd255cf4aa40a1560471"
 
-  url "https://github.com/MioMioOS/MioIsland/releases/download/v#{version}/CodeIsland-v#{version}.zip"
+  url "https://github.com/MioMioOS/MioIsland/releases/download/v#{version}/MioIsland-v#{version}.zip"
   name "Mio Island"
   desc "Your AI agents live in the macOS notch — Claude Code companion"
   homepage "https://github.com/MioMioOS/MioIsland"
@@ -17,10 +17,6 @@ cask "codeisland" do
 
   app "Mio Island.app"
 
-  # MioIsland ships unsigned as a deliberate project policy — Apple's
-  # notary service repeatedly failed with server-side statusCode 7000 and
-  # we stopped fighting it. Strip the quarantine attribute on install so
-  # Homebrew users do not hit Gatekeeper on first launch.
   postflight do
     system_command "/usr/bin/xattr",
                    args: ["-dr", "com.apple.quarantine", "#{appdir}/Mio Island.app"],
